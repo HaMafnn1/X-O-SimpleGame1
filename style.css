@@ -1,0 +1,194 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color for the game title */
+.gameTitle {
+    color: rgb(108, 175, 208); /* Change this to your desired color */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Color for Player 1 score */
+.player1Score {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    float: left;
+}
+
+/* Color for Player 2 score */
+.player2Score {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 20px;
+    float: right;
+}
+
+/* Change X color to red */
+.X {
+    color: red;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+/* Change O color to blue */
+.O {
+    color: blue;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eae0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Styles for the Game Field */
+.gameField {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);  /* Smaller width */
+    grid-template-rows: repeat(3, 100px);     /* Smaller height */
+    gap: 0px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Styles for Each Cell */
+.cell {
+    width: 100px;           
+    height: 100px;          
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ec8e9;
+    border: 3px solid #413d3d;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+/* Styles for the Restart Button */
+.newGame {
+    margin-top: 22px;
+}
+
+.restart {
+    padding: 12px 22px;
+    font-size: 19px;
+    background-color: #11191d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.restart:hover {
+    background-color: #650707;
+}
+
+/* Styles for the History Button */
+.historyBtn {
+    padding: 12px 22px;
+    font-size: 15px;
+    background-color: #11191d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.historyBtn:hover {
+    background-color: #650707;
+}
+
+/* Styles for Change Names Button */
+.changeNamesBtn {
+    padding: 12px 22px;
+    font-size: 15px;
+    background-color: #11191d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.changeNamesBtn:hover {
+    background-color: #650707;
+}
+
+/* Game History Styles */
+.gameHistory {
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.historyList {
+    list-style-type: none;
+}
+
+.historyList li {
+    margin-bottom: 10px;
+}
+
+/* Styles for Clear History Button */
+.clearHistoryBtn {
+    padding: 12px 22px;
+    font-size: 15px;
+    background-color: #11191d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.clearHistoryBtn:hover {
+    background-color: #650707;
+}
+
+/* Add hover effect for cells */
+.cell:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Player 1 hover effect */
+.cell.x-hover:hover {
+    background-color: rgba(255, 0, 0, 0.2);  /* Red hover effect for Player 1 */
+}
+
+/* Player 2 hover effect */
+.cell.o-hover:hover {
+    background-color: rgba(0, 0, 255, 0.2);  /* Blue hover effect for Player 2 */
+}
