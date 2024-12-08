@@ -16,18 +16,18 @@
 /* Color for Player 1 score */
 .player1Score {
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 10px;
     float: left;
 }
 
 /* Color for Player 2 score */
 .player2Score {
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 10px;
     float: right;
 }
 
