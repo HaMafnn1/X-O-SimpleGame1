@@ -16,19 +16,19 @@
 /* Color for Player 1 score */
 .player1Score {
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    padding-left: 10px;
-    float: left;
+    padding-left: 18px;
+    float: top left left;
 }
 
 /* Color for Player 2 score */
 .player2Score {
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    padding-right: 10px;
-    float: right;
+    padding-right: 18px;
+    float: top right right;
 }
 
 /* Change X color to red */
